@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Week 2 HTML5 enhanced form with lists, tables, media, and validation." />
+  <meta name="author" content="Tekalign Belete" />
+  <title>Week 2 Enhanced Form</title>
+</head>
+<body>
+  <header>
+    <h1>Registration Portal</h1>
+    <p>Welcome! Please fill out the form below to register for our event.</p>
+  </header>
+
+  <main>
+    <!-- Example list -->
+    <section>
+      <h2>Event Highlights</h2>
+      <ul>
+        <li>Interactive Workshops</li>
+        <li>Networking Sessions</li>
+        <li>Guest Speakers</li>
+      </ul>
+    </section>
+
+    <!-- Example table -->
+    <section>
+      <h2>Event Schedule</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Activity</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>09:00 AM</td>
+            <td>Opening Ceremony</td>
+            <td>Main Hall</td>
+          </tr>
+          <tr>
+            <td>10:00 AM</td>
+            <td>Workshop 1</td>
+            <td>Room A</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Example media -->
+    <section>
+      <h2>Promotional Video</h2>
+      <video width="320" height="240" controls>
+        <source src="promo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- HTML5 form -->
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="John Doe" required /><br /><br />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="example@mail.com" required autocomplete="email" /><br /><br />
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" placeholder="123-456-7890" /><br /><br />
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required /><br /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Event Preferences</legend>
+          <p>Session Type:</p>
+          <input type="radio" id="workshop" name="session" value="Workshop" required />
+          <label for="workshop">Workshop</label>
+          <input type="radio" id="talk" name="session" value="Talk" />
+          <label for="talk">Talk</label><br /><br />
+
+          <p>Additional Activities:</p>
+          <input type="checkbox" id="networking" name="activities" value="Networking" />
+          <label for="networking">Networking</label>
+          <input type="checkbox" id="lunch" name="activities" value="Lunch" />
+          <label for="lunch">Lunch</label><br /><br />
+
+          <label for="file">Upload Resume:</label>
+          <input type="file" id="file" name="resume" /><br /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Confirmation</legend>
+          <label for="referral">How did you hear about us?</label>
+          <select id="referral" name="referral">
+            <option value="friend">Friend</option>
+            <option value="social">Social Media</option>
+            <option value="ads">Advertisements</option>
+          </select><br /><br />
+
+          <label for="readonlyCode">Invitation Code:</label>
+          <input type="text" id="readonlyCode" name="code" value="INVITE2025" readonly /><br /><br />
+        </fieldset>
+
+        <button type="submit">Submit Registration</button>
+        <button type="reset">Clear Form</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Event Registration | Contact: <a href="mailto:tekalign@example.com">tekalign@example.com</a></p>
+  </footer>
+</body>
+</html>
